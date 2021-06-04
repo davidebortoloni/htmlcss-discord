@@ -1,0 +1,93 @@
+/* Condizioni generali */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Utilities */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col {
+    float: left;
+}
+.col.w-25 {
+    width: 25%;;
+}
+.col.w-50 {
+    width: 50%;;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-black{
+    color: black;
+}
+.bg-white {
+    background-color: white;
+}
+.btn {
+    border-radius: 20px;
+}
+.btn.small {
+    padding: 10px 20px;
+    width: 50px;
+    height: 20px;
+}
+
+/* Impostazione header */
+header {
+    background-color: #2A5EE8;
+    color: white;
+}
+header .topbar {
+    height: 75px;
+    line-height: 75px;
+}
+header .hero {
+    height: 490px;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Stilizzazione TopBar */
+
+/* Logo  */
+#logo {
+    width: 110px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+/* Main Menù */
+.main-menu ul {
+    list-style-type: none;
+    }
+.main-menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+}
+.main-menu li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Stilizzazione hero */
