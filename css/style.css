@@ -10,7 +10,7 @@ body {
 
 /* Utilities */
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .clearfix::after {
@@ -24,8 +24,14 @@ body {
 .col.w-25 {
     width: 25%;;
 }
+.col.w-40 {
+    width: 40%;;
+}
 .col.w-50 {
     width: 50%;;
+}
+.col.w-60 {
+    width: 60%;;
 }
 .text-center {
     text-align: center;
@@ -44,6 +50,21 @@ body {
 }
 .bg-grey {
     background-color: #23272A;
+}
+.bg-lightblue {
+    background-color: #8EA1E1;
+}
+h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 .btn {
     border-radius: 30px;
@@ -67,6 +88,8 @@ body {
 /* Impostazione header */
 header {
     background-color: #2A5EE8;
+    margin-bottom: 100px;
+    z-index: 1;
 }
 header .topbar {
     height: 75px;
@@ -77,6 +100,7 @@ header .hero {
     background-image: url("../img/hero.png");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 
@@ -104,20 +128,13 @@ header .hero {
 }
 
 
-/* Stilizzazione hero */
-.hero {
-    position: relative;
-}
+/* Stilizzazione hero */ 
 .hero .content {
     width: 45%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -60%);
-}
-.hero .content h1 {
-    font-size: 55px;
-    margin-bottom: 30px;
 }
 .hero .content p {
     margin-top: 30px;
@@ -127,4 +144,48 @@ header .hero {
 }
 .hero .content .btn .fa-long-arrow-alt-down {
     margin-right: 10px;
+}
+
+
+/* Stilizzazione main */
+main .col {
+    padding: 0 30px;
+}
+main img {
+    width: 100%;
+}
+main .star{
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 53%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+main .star h3 {
+    position: relative;
+    top: 35px;
+}
+main p {
+    font-size: 19px;
+    line-height: 30px;
+}
+main .waves.grey {
+    background-image: url('../img/waves-grey.svg');
+    padding-bottom: 125px;
+}
+main .waves.white {
+    background-image: url('../img/waves-white.svg');
+    bottom: 75px;
+}
+main .waves {
+    padding-top: 100px;
+    background-size: cover;
+    position: relative;
+}
+
+/* Stilizzazione footer */
+footer {
+    height: 600px;
 }
