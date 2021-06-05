@@ -241,6 +241,9 @@ footer a {
     text-decoration: none;
     color: white;
 }
+.bottom-menu li a:hover {
+    text-decoration: underline;
+}
 footer .logo {
     float: left;
     width: 110px;
