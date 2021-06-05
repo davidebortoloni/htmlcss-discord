@@ -33,20 +33,32 @@ body {
 .text-right {
     text-align: right;
 }
-.text-black{
-    color: black;
+.text-white {
+    color: white;
+}
+.text-grey {
+    color: #23272A;
 }
 .bg-white {
     background-color: white;
 }
+.bg-grey {
+    background-color: #23272A;
+}
 .btn {
-    border-radius: 20px;
+    border-radius: 30px;
     text-decoration: none;
 }
 .btn.small {
-    padding: 10px 20px;
-    width: 50px;
+    font-size: 14px;
+    padding: 9px 15px;
     height: 20px;
+}
+.btn.big {
+    padding: 15px 30px;
+    height: 30px;
+    font-size: 18px;
+    margin: 0 10px;
 }
 .btn:hover {
     color: #2A5EE8;
@@ -55,7 +67,6 @@ body {
 /* Impostazione header */
 header {
     background-color: #2A5EE8;
-    color: white;
 }
 header .topbar {
     height: 75px;
@@ -75,7 +86,6 @@ header .hero {
 #logo {
     width: 110px;
     vertical-align: middle;
-    margin-left: 10px;
 }
 /* Main Menù */
 .main-menu ul {
@@ -95,3 +105,26 @@ header .hero {
 
 
 /* Stilizzazione hero */
+.hero {
+    position: relative;
+}
+.hero .content {
+    width: 45%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+}
+.hero .content h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.hero .content p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.hero .content .btn .fa-long-arrow-alt-down {
+    margin-right: 10px;
+}
