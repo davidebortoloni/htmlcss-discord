@@ -10,7 +10,7 @@ body {
 
 /* Utilities */
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .clearfix::after {
@@ -21,17 +21,23 @@ body {
 .col {
     float: left;
 }
+.col.w-17 {
+    width: 17%;
+}
 .col.w-25 {
-    width: 25%;;
+    width: 25%;
+}
+.col.w-32 {
+    width: 32%;
 }
 .col.w-40 {
-    width: 40%;;
+    width: 40%;
 }
 .col.w-50 {
-    width: 50%;;
+    width: 50%;
 }
 .col.w-60 {
-    width: 60%;;
+    width: 60%;
 }
 .text-center {
     text-align: center;
@@ -66,6 +72,12 @@ h3 {
     font-size: 30px;
     margin-bottom: 30px;
 }
+h4 {
+    font-size: 33px;
+}
+h5 {
+    font-size: 17px;
+}
 .btn {
     border-radius: 30px;
     text-decoration: none;
@@ -73,13 +85,10 @@ h3 {
 .btn.small {
     font-size: 14px;
     padding: 9px 15px;
-    height: 20px;
 }
 .btn.big {
     padding: 15px 30px;
-    height: 30px;
     font-size: 18px;
-    margin: 0 10px;
 }
 .btn:hover {
     color: #2A5EE8;
@@ -107,14 +116,14 @@ header .hero {
 /* Stilizzazione TopBar */
 
 /* Logo  */
-#logo {
+header .topbar .logo {
     width: 110px;
     vertical-align: middle;
 }
 /* Main Menù */
 .main-menu ul {
     list-style-type: none;
-    }
+}
 .main-menu li {
     display: inline-block;
     margin: 0 20px;
@@ -139,22 +148,26 @@ header .hero {
 .hero .content p {
     margin-top: 30px;
     margin-bottom: 40px;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 30px;
 }
 .hero .content .btn .fa-long-arrow-alt-down {
     margin-right: 10px;
 }
+.hero .content .btn {
+    margin: 0 10px;
+}
+
 
 
 /* Stilizzazione main */
 main .col {
-    padding: 0 30px;
+    padding: 0 45px;
 }
 main img {
     width: 100%;
 }
-main .star{
+main .star {
     background-image: url('../img/stars.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -187,5 +200,55 @@ main .waves {
 
 /* Stilizzazione footer */
 footer {
+    padding-top: 80px;
     height: 600px;
+}
+footer .bottom-menu {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+footer .col {
+    padding: 0 20px;
+}
+footer h4 {
+    color: #7289DA;
+    margin-bottom: 25px;
+}
+footer h5 {
+    color: #7289DA;
+}
+footer .language {
+    margin: 20px 0;
+}
+#bandiera {
+    width: 20px;
+    margin-right: 5px;
+}
+footer .col .social-icons {
+    margin: 20px 0;
+    font-size: 18px;
+}
+footer .col .fab {
+    margin-right: 18px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    margin: 10px 0;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer .logo {
+    float: left;
+    width: 110px;
+}
+footer hr {
+    margin: 30px 0;
+    border-color: #7289DA;
+}
+footer .registrati {
+    float: right;
 }
