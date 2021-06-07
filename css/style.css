@@ -57,6 +57,9 @@ body {
 .bg-grey {
     background-color: #23272A;
 }
+.bg-lightgrey {
+    background-color: #f6f6f6;
+}
 .bg-lightblue {
     background-color: #8EA1E1;
 }
@@ -184,18 +187,15 @@ main p {
     font-size: 19px;
     line-height: 30px;
 }
-main .waves.grey {
-    background-image: url('../img/waves-grey.svg');
-    padding-bottom: 125px;
+main .wave {
+    display: block;
+    color: #f6f6f6;
 }
-main .waves.white {
-    background-image: url('../img/waves-white.svg');
-    bottom: 75px;
+main .wave.reverse {
+    transform: rotate(180deg);
 }
-main .waves {
-    padding-top: 100px;
-    background-size: cover;
-    position: relative;
+main section .content {
+    padding: 100px 0;
 }
 
 /* Stilizzazione footer */
@@ -223,6 +223,7 @@ footer .language {
 #bandiera {
     width: 20px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 footer .col .social-icons {
     margin: 20px 0;
